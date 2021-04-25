@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mina {
+    display:flexbox;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: right;
+    flex-direction: row;
+
+
+}

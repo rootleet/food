@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Inn  Eatery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/inn.png" alt="logo" width="100px" height="60px"/>
+        <h6>Corner Inn Eatery</h6>
+        <h2>Food Sales App</h2>
+      </div>
+    <br>
+    <h4 class="mina">Our New Menu</h4>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#mina">
+                    <div class="card shadow-lg">
+                        <img src="images/banku.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Banku</h5>
+                            <p class="card-text">Banku and Tilipia.</p>
+                        </div>
+                    </div>
+                </button
+
+                <!-- Modal -->
+                <div class="modal fade" id="mina" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Banku</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Contact">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Amount(ghc)">
+                                            <select class="form-control rounded-pill mb-4">
+                                                <option>Banku</option>
+                                            </select>
+                                                
+                                                <select class="form-select rounded-pill mb-4" >
+                                                <option selected disabled>Accompaniment</option>
+                                                <option value="1">Okro stew and meat or fish</option>
+                                                <option value="2">Soup and meat</option>
+                                                <option value="3">Pepper and tilapia</option>
+                                                
+                                              </select>   
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-dark" style="padding: 10px 30px;">Pay</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- another card -->
+            
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#example">
+                    <div class="card shadow-lg">
+                        <img src="images/hot.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fufu</h5>
+                            <p class="card-text">Fufu with goat soup</p>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Fufu</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Contact">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Amount(ghc)">
+                                            <select class="form-control rounded-pill mb-4">
+                                                <option>Fufu</option>
+                                            </select>
+                                                                                            
+                                            <select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                                <option selected disabled>Accompaniment</option>
+                                                <option value="1">Groundnut soup with chicken</option>
+                                                <option value="2">Lightsoup with goat meat</option>
+                                                <option value="3">Palmnut soup with tuna and crab</option>
+                                                
+                                              </select>   
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-dark" style="padding: 10px 30px;">Pay</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#exam">
+                    <div class="card shadow-lg">
+                        <img src="images/yam.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fried Yam</h5>
+                            <p class="card-text">Fried yam with shito and fried fish .</p>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exam" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Fried Yam</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Content">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Amount(ghc)">
+                                            <select class="form-control rounded-pill mb-4">
+                                                <option>Fried Yam</option>
+                                            </select>
+                                                  
+                                            <select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                              <option selected disabled>Accompaniment</option>
+                                              <option value="1">Pepper and shito with fried Chicken</option>
+                                              <option value="2">Pepper and shito with fried Fish</option>
+                                              <option value="3">Pepper and shito with fried eggs</option>
+                                              
+                                            </select>  
+                                      </div>
+                                      <button type="submit" class="btn btn-outline-dark" style="padding: 10px 30px;">Pay</button>
+                                    </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+                         
+                                                
+
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-4" data-bs-toggle="modal" data-bs-target="#exa">
+                    <div class="card shadow-lg">
+                        <img src="images/t.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tuo Zaafi</h5>
+                            <p class="card-text">Tuo zaafi with ayoyo soup</p>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Tuo Zaafi</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Contact">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Amount(ghc)">
+                                            <select class="form-control rounded-pill mb-4">
+                                                <option>Tuo Zaafi</option>
+                                            </select>
+                                                
+                                                
+                                              </select>  
+                                              <select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                                <option selected disabled>Accompaniment</option>
+                                                <option value="1">Ayoyo soup with chicken</option>
+                                                <option value="2">Ayoyo soup with meat</option>
+                                            </select>  
+                                                
+                                                
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-dark" style="padding: 10px 30px;">Pay</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-4" data-bs-toggle="modal" data-bs-target="#rice">
+                    <div class="card shadow-lg">
+                        <img src="images/rice.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Plain Rice</h5>
+                            <p class="card-text">Plain rice with with vegetable stew</p>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="rice" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Plain rice</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Content">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Amount">
+                                            <select class="form-control rounded-pill mb-4">
+                                                <option>Plain Rice</option>
+                                            </select>
+                                                
+                                            <select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                                <option selected disabled>Accompaniment</option>
+                                                <option value="1">Stew with chicken or egg</option>
+                                                <option value="2">Palava sauce with Fish</option>
+                                            </select>  
+                                                
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-dark" style="padding: 10px 30px;">Pay</button> 
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-4" data-bs-toggle="modal" data-bs-target="#elop">
+                    <div class="card shadow-lg">
+                        <img src="images/y.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ampesi</h5>
+                            <p class="card-text">Boiled plantain or yam with palava sauce</p>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="elop" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-center">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">Ampesi</h5>
+                                <button type="button" class="btn-close bg-light btn-outline-light" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Order Form</h3>
+                                <div class="p-3 m-3" style="border: solid 2px rgb(180, 179, 179);">
+                                    <h4>Food Item</h4>
+                                    <form>
+                                        <div class=" mb-4">
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Name">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="exampleInputEmail1" placeholder="Contact">   
+                                            <input type="text" class="form-control rounded-pill mb-4" id="Mina " placeholder="Amount"><select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                                <option selected disabled>Main Content</option>
+                                                <option value="1">Boiled Yam</option>
+                                                <option value="2">Boiled Plantain</option>
+                                            </select>
+                                            <select class="form-select rounded-pill mb-4" aria-label="Default select example">
+                                                <option selected disabled>Accompaniment</option>
+                                                <option value="1">Stew with chickejjn or egg</option>
+                                                <option value="2">Palava sauce with Fish</option>
+                                                <option value="2">Soup with meat</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <button type="submit" class="btn btn-dark float-right">Pay</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <div class="wonder">
+        <div class="txt">
+    <h6>Total Daily Sales</h6> 
+    </div>   
+    </div>
+    <h6>Copyright@2021</h6>
+    
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

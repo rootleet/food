@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Navigation Bar</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="navbar">
+        
+        <div class="right">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>Coding Market</p> <i class="fas fa-angle-down"></i>
+                </a>
+                 
+                <div class="dropdown">
+                    <ul>
+                      <li><a href="#"> Banku</a></li>
+                      <li><a href="#">Fufu</a></li>
+                      <li><a href="#">Fried Yam</a></li>
+                      <li><a href="#">Tuo Zaafi</a></li>
+                      <li><a href="#">Rice</a></li>
+                      <li><a href="#">Ampesi</a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
+                  </ul>
+                </div>
+                
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>	
+
+<script>
+	document.querySelector(".right ul li").addEventListener("click", function(){
+		  this.classList.toggle("active");
+	});
+</script>
+
+</body>
+</html>
