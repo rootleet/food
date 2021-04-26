@@ -5,6 +5,17 @@ body
     overflow: hidden !important;
 }
 
+.bg-header
+{
+    background: #D4F5F5;
+    color: #2D2D34;
+}
+
+header button
+{
+    height: 25px !important;
+}
+
 header
 {
     height: 8%;
@@ -66,6 +77,18 @@ article
     cursor: pointer !important;
 }
 
+.ecn
+{
+    color: rgba(225, 226, 227, 0.29) ;
+}
+
+.ecn:hover
+{
+    font-size: x-large !important;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
 .btn-nav:hover
 {
     background-color: #434250;
@@ -89,6 +112,12 @@ article
     overflow: hidden;
     text-overflow: ellipsis;
 
+}
+
+.in_btn
+{
+    height: 100px !important;
+    width: 150px !important;
 }
 
 .shadow
@@ -148,6 +177,8 @@ article
     color: #f3f3f3 !important;
     background: #1f2326;
 }
+
+
 
 .card_hover:hover
 {

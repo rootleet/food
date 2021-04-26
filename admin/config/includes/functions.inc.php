@@ -40,6 +40,7 @@
         $stmt  = $con->prepare($sql);
         $stmt->execute();
         return $stmt->rowCount();
+        die();
     }
 
     //get sum of column
@@ -58,6 +59,22 @@
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result["SUM($column)"];
     }
+
+    //insert
+    function insert($table , $colums , $values , $con)
+    {
+        $sql = "INSERT INTO `$table` ($colums) VALUES ($values)";
+        $stmt = $con->prepare($sql);
+        if ($stmt->execute())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
     //login function
     function login($username , $password , $conn)
@@ -103,4 +120,11 @@
         $_SESSION = array();
         session_destroy();
         gb();
+    }
+
+    //set notification
+    function notification($message)
+    {
+        @session_start();
+        $_SESSION['notification'] = $message;
     }

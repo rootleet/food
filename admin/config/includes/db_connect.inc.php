@@ -8,7 +8,7 @@
 
     $host_name = 'localhost';
     $user = 'root';
-    $password = '';
+    $password = 'Sunderland@411';
     $database = 'corner_inn';
 
     //set dsn
