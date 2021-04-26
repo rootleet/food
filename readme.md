@@ -1,4 +1,4 @@
-![alt text](assets/bg/app.png)
+![alt text](admin/assets/bg/app.png)
 #UPDATE
 I am almost done with the menu item page, we will have 2 navs, which are <br> 
 category and menu items
